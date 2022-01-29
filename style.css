@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSansVariableFont.ttf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: context-menu;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e7e7e7;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  all: unset;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #3c3c3c;
+  padding: 15px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 15px;
+  max-width: 236px;
+  height: 85px;
+  background-color: #ffffff;
+}
+
+.screen p {
+  font-size: 22px;
+}
+
+.clear-delete {
+  display: flex;
+  gap: 12px;
+}
+
+.clear,
+.delete {
+  flex: auto;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+}
+
+.operate {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.operate-column {
+  display: flex;
+  gap: 12px;
+}
+
+footer {
+  padding: 15px;
+}
+
+footer a {
+  all: unset;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  transition: 250ms;
+  font-size: 12px;
+}
+
+footer i {
+  font-size: 16px;
+}
+
+@media (hover: hover) {
+  footer a:hover,
+  i:hover,
+  span:hover {
+    cursor: pointer;
+    color: #a0a0a0;
+  }
+}

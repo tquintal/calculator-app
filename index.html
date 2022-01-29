@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/ad57ef8a9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./script.js" defer></script>
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="screen" id="screen"><p id="result"></p></div>
+      <div class="clear-delete">
+        <button class="clear" id="clear-btn">Clear</button>
+        <button class="delete" id="delete-btn">Delete</button>
+      </div>
+      <div class="operate">
+        <div class="operate-column">
+          <button id="number">7</button>
+          <button id="number">8</button>
+          <button id="number">9</button>
+          <button id="operator">÷</button>
+        </div>
+
+        <div class="operate-column">
+          <button id="number">4</button>
+          <button id="number">5</button>
+          <button id="number">6</button>
+          <button id="operator">x</button>
+        </div>
+
+        <div class="operate-column">
+          <button id="number">1</button>
+          <button id="number">2</button>
+          <button id="number">3</button>
+          <button id="operator">-</button>
+        </div>
+
+        <div class="operate-column">
+          <button id="number">.</button>
+          <button id="number">0</button>
+          <button id="equal-btn">=</button>
+          <button id="operator">+</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/tquintal/" target="_blank">
+        Copyright ©<span id="copyright"></span>Tomás Quintal
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+  </body>
+</html>
